@@ -1,0 +1,19 @@
+.odd {
+    background-color: hsl(0, 80%, 70%);
+    font-family: Verdana, DejaVu Sans, sans-serif;
+}
+/* "odd" does not need to be checked here */
+.odd.cooler { 
+    font-size: 24px;
+}
+
+#number2 {
+    color: hsl(240, 100%, 50%);
+    font-size: 36px;
+}
+
+#number4 {
+    background-color: hsl(120, 73%, 75%);
+    font-size: 24px;
+    font-weight: bold;
+}
