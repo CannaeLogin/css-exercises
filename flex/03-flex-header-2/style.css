@@ -9,9 +9,19 @@ body {
 }
 
 .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Hindsight: not necessary */
   background: white;
+  padding: 8px;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
+}
+
+.header > * { /* Better: .left-header, .right-header {. Wanted to practice descendants */
+  gap: 8px;
+  display: flex;
+  align-items: center;
 }
 
 .profile-image {
@@ -27,6 +37,7 @@ body {
   font-size: 32px;
   font-weight: 900;
   font-style: italic;
+  margin-right: 8px;
 }
 
 button {
@@ -44,5 +55,8 @@ a {
 }
 
 ul {
+  display: flex;
+  gap: 16px;
+  padding-left: 0px;
   list-style-type: none;
 }
