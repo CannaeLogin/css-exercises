@@ -1,0 +1,23 @@
+/* I rebuilt the html and css from the ground up to help me
+understand why my elements weren't flexing. */
+
+div {
+    display: flex;
+}
+
+.header {
+    justify-content: space-around;
+}
+
+.logo {
+    align-self: center;
+    padding: 5px;
+    border: 5px solid black;
+}
+
+ul {
+    display: flex;
+    gap: 8px;
+    list-style-type: none;
+    padding-left: 0px;
+}

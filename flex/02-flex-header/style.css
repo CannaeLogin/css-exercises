@@ -1,6 +1,19 @@
+/* 
+Hindsight: I selected div separately here, even though in this case,
+.header was already selected and appending display: flex to it would have
+been better. After all, there is no reason here to select div separately.
+*/
+
+div {
+  display: flex;
+}
+
 .header  {
+  justify-content: space-between;
+  align-items: center;
   font-family: monospace;
   background: papayawhip;
+  padding: 8px;
 }
 
 .logo {
@@ -12,8 +25,12 @@
 }
 
 ul {
+  display: flex;
+  gap: 8px;
   /* this removes the dots on the list items*/
   list-style-type: none;
+  /* this gets rid of the excess space left behind by the hidden dots */
+  padding-left: 0px;
 }
 
 a {
