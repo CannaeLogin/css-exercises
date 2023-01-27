@@ -16,6 +16,8 @@ body {
 }
 
 .modal {
+  padding: 15px;
+  display: flex;
   background: white;
   width: 480px;
   border-radius: 10px;
@@ -23,6 +25,8 @@ body {
 }
 
 .icon {
+  flex-shrink: 0;
+  margin-right: 15px;
   color: royalblue;
   font-size: 26px;
   font-weight: 700;
@@ -35,7 +39,17 @@ body {
   justify-content: center;
 }
 
+.header {
+  font-size: large;
+  font-weight: bold;
+}
+
+.text {
+  padding: 10px 0px;
+}
+
 .close-button {
+  flex-shrink: 0;
   background: #eee;
   border-radius: 50%;
   color: #888;

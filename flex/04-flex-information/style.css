@@ -1,15 +1,52 @@
+/* After seeing the solution to this exercise, I was surprised by how short
+it was. To me, it seems like that approach leaves almost no room to allow
+for adjusting any indvidual element efficiently. For example, it uses
+align-text: center on the body selector, which works if the page is
+expected to stay this simple, but you'd have to rewrite the whole structure
+if you decide to change the text alignment for any element.
+
+Of course, I do understand the importance of not over-engineering things
+before they're needed in the first place. In a way, I think my approach
+taught me more about flexbox by nesting more, but going forward,
+I'll try and keep things more simple. */
+
 body {
   font-family: 'Courier New', Courier, monospace;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  margin: 16px;
+  font-size: 36px;
+  font-weight: 900;
+}
+
+.plant-container {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-evenly;
+  gap: 40px;
+  margin: 40px 100px;
+}
+
+.plant-container > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 200px;
+  gap: 10px;
+}
+
+.text {
+  text-align: center;
+  /* align-self: center; cannot not center the text, only the box that the
+  text is in. */ 
 }
 
 img {
   width: 100px;
   height: 100px;
-}
-
-.title {
-  font-size: 36px;
-  font-weight: 900;
 }
 
 /* do not edit this footer */
