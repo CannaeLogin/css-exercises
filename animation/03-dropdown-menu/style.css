@@ -19,6 +19,9 @@
   background-color: rgb(99, 97, 97);
 
   display: none;
+
+  animation: 0.3s foldout;
+  transform-origin: top;
 }
 
 ul.dropdown-menu li:hover {
@@ -29,4 +32,14 @@ ul.dropdown-menu li:hover {
   display: block;
 }
 
-
+@keyframes foldout {
+  from {
+    transform: scaleY(0);
+  }
+  60% {
+    transform: scaleY(1.1);
+  }
+  to {
+    transform: scaleY(1);
+  }
+}
